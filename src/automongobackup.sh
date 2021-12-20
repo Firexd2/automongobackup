@@ -31,7 +31,7 @@ set -eo pipefail
 
 # Database name to specify a specific database only e.g. myawesomeapp
 # Unnecessary if backup all databases
-# DBNAME=""
+DBNAME="metro"
 
 # Collections name list to include e.g. system.profile users
 # DBNAME is required
@@ -45,15 +45,15 @@ set -eo pipefail
 
 # Username to access the mongo server e.g. dbuser
 # Unnecessary if authentication is off
-# DBUSERNAME=""
+DBUSERNAME=$1
 
 # Password to access the mongo server e.g. password
 # Unnecessary if authentication is off
-# DBPASSWORD=""
+DBPASSWORD=$2
 
 # Database for authentication to the mongo server e.g. admin
 # Unnecessary if authentication is off
-# DBAUTHDB=""
+DBAUTHDB="admin"
 
 # Host name (or IP address) of mongo server e.g localhost
 DBHOST="127.0.0.1"
