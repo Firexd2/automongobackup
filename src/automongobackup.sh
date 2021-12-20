@@ -116,10 +116,10 @@ LATEST="yes"
 LATESTLINK="yes"
 
 # Use oplog for point-in-time snapshotting.
-OPLOG="yes"
+OPLOG="no"
 
 # Choose other Server if is Replica-Set Master
-REPLICAONSLAVE="yes"
+REPLICAONSLAVE="no"
 
 # Allow DBUSERNAME without DBAUTHDB
 REQUIREDBAUTHDB="yes"
